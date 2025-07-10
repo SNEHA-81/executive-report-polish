@@ -1,12 +1,12 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import TeamPerformanceChart from "@/components/TeamPerformanceChart";
 import CompletionProgress from "@/components/CompletionProgress";
 import TimelineChart from "@/components/TimelineChart";
 import CapacityMetrics from "@/components/CapacityMetrics";
 import StrategicRecommendations from "@/components/StrategicRecommendations";
-import { TrendingUp, Users, Target, Download } from "lucide-react";
+import { TrendingUp, Users, Target } from "lucide-react";
 
 const Index = () => {
   const keyMetrics = [
@@ -33,11 +33,6 @@ const Index = () => {
     }
   ];
 
-  const handleDownload = () => {
-    // Placeholder for download functionality
-    alert("Download functionality not implemented yet.");
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white p-4 sm:p-6">
       <div className="max-w-7xl mx-auto space-y-4 sm:space-y-6">
@@ -56,15 +51,6 @@ const Index = () => {
             <span><strong>Consultant:</strong> Protiviti</span>
             <span><strong>Status:</strong> Final Phase</span>
           </div>
-          
-          {/* Download Button */}
-          <Button 
-            onClick={handleDownload}
-            className="mt-4 bg-blue-600 hover:bg-blue-700 text-white"
-          >
-            <Download className="w-4 h-4 mr-2" />
-            Download Report
-          </Button>
         </div>
 
         {/* Key Metrics Row - Now 3 columns */}
