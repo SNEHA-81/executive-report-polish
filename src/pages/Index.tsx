@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import TeamPerformanceChart from "@/components/TeamPerformanceChart";
@@ -20,7 +19,7 @@ const Index = () => {
       icon: CheckCircle,
       trend: "11,225 parts remaining",
       status: "completion",
-      indicator: "⏳ ACCELERATING"
+      indicator: "ACCELERATING"
     },
     {
       title: "CURRENT PACE", 
@@ -29,7 +28,7 @@ const Index = () => {
       icon: TrendingUp,
       trend: "45 parts/day gap",
       status: "pace",
-      indicator: "📈 SCALING UP"
+      indicator: "SCALING UP"
     },
     {
       title: "TIME REMAINING",
@@ -38,7 +37,7 @@ const Index = () => {
       icon: Clock,
       trend: "Protected timeline",
       status: "time",
-      indicator: "⏰ MANAGEABLE"
+      indicator: "MANAGEABLE"
     },
     {
       title: "ENHANCED STRATEGY",
@@ -47,7 +46,7 @@ const Index = () => {
       icon: Target,
       trend: "24% surplus capacity",
       status: "strategy",
-      indicator: "⚡ DEPLOYED"
+      indicator: "DEPLOYED"
     },
     {
       title: "TEAM CAPACITY",
@@ -56,7 +55,7 @@ const Index = () => {
       icon: Users,
       trend: "Enhanced from 7.5 FTE",
       status: "team",
-      indicator: "👥 REINFORCED"
+      indicator: "REINFORCED"
     },
     {
       title: "DELIVERY ASSURANCE",
@@ -65,7 +64,7 @@ const Index = () => {
       icon: Shield,
       trend: "Risk mitigation active",
       status: "buffer",
-      indicator: "🛡️ PROTECTED"
+      indicator: "PROTECTED"
     }
   ];
 
@@ -100,7 +99,7 @@ const Index = () => {
         <div className="text-center space-y-6 mb-12">
           <div className="flex flex-col items-center space-y-4">
             <Badge className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 text-base font-bold shadow-lg">
-              🚀 ENHANCED CAPACITY STRATEGY - 25,000 PART DELIVERY PLAN
+              ENHANCED CAPACITY STRATEGY - 25,000 PART DELIVERY PLAN
             </Badge>
             <Badge variant="outline" className="border-2 border-blue-500 text-blue-700 bg-blue-50 px-4 py-2 font-semibold">
               11,225 PARTS REMAINING • 7-8 WEEKS TARGET • 225+ PARTS/DAY CAPACITY
