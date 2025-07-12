@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -18,9 +17,9 @@ const CapacityMetrics = () => {
     },
     {
       label: "Required Daily Pace",
-      value: "82 parts",
+      value: "182 parts",
       status: "target",
-      description: "To complete on time"
+      description: "To complete remaining 11,225 in 62 days"
     }
   ];
 
@@ -39,9 +38,9 @@ const CapacityMetrics = () => {
     },
     {
       label: "Daily Buffer Created",
-      value: "140+ parts",
+      value: "43+ parts",
       status: "buffer",
-      description: "Safety margin"
+      description: "Safety margin above requirement"
     }
   ];
 
@@ -108,21 +107,21 @@ const CapacityMetrics = () => {
         </div>
       </div>
       
-      <Card className="mt-6 bg-green-50 border-green-200">
+      <Card className="mt-6 bg-blue-50 border-blue-200">
         <CardContent className="p-4">
-          <h4 className="font-semibold text-green-900 mb-2">Completion Projection</h4>
-          <p className="text-sm text-green-800 mb-3">
+          <h4 className="font-semibold text-blue-900 mb-2">Completion Projection</h4>
+          <p className="text-sm text-blue-800 mb-3">
             With enhanced team capacity of <strong>225-230 parts/day</strong>, 
-            the remaining <strong>1,225 parts</strong> can be completed in just <strong>5-6 days</strong>.
+            the remaining <strong>11,225 parts</strong> can be completed in approximately <strong>7-8 weeks</strong>.
           </p>
           <div className="grid grid-cols-2 gap-4 text-xs">
             <div className="bg-white/50 rounded p-2">
-              <div className="font-bold text-green-900">Time Buffer</div>
-              <div className="text-green-700">9-10 extra days</div>
+              <div className="font-bold text-blue-900">Delivery Buffer</div>
+              <div className="text-blue-700">24% capacity surplus</div>
             </div>
             <div className="bg-white/50 rounded p-2">
-              <div className="font-bold text-green-900">Capacity Buffer</div>
-              <div className="text-green-700">174% surplus</div>
+              <div className="font-bold text-blue-900">Timeline Security</div>
+              <div className="text-blue-700">Protected delivery schedule</div>
             </div>
           </div>
         </CardContent>

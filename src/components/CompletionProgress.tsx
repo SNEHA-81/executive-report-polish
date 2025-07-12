@@ -4,7 +4,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
 const CompletionProgress = () => {
   const data = [
     { name: 'Completed', value: 13775, color: '#2563eb' },
-    { name: 'Remaining', value: 1225, color: '#e5e7eb' }
+    { name: 'Remaining', value: 11225, color: '#e5e7eb' }
   ];
 
   const COLORS = ['#2563eb', '#e5e7eb'];
@@ -40,15 +40,19 @@ const CompletionProgress = () => {
       <div className="mt-4 space-y-2">
         <div className="flex justify-between text-sm">
           <span className="text-gray-600">Completion Rate:</span>
-          <span className="font-semibold text-blue-600">91.8%</span>
+          <span className="font-semibold text-blue-600">55.1%</span>
         </div>
         <div className="flex justify-between text-sm">
           <span className="text-gray-600">Required Daily Pace:</span>
-          <span className="font-semibold">82 parts/day</span>
+          <span className="font-semibold">182 parts/day</span>
         </div>
         <div className="flex justify-between text-sm">
-          <span className="text-gray-600">Current Surplus:</span>
-          <span className="font-semibold text-green-600">+55 parts/day</span>
+          <span className="text-gray-600">Current Gap:</span>
+          <span className="font-semibold text-orange-600">-45 parts/day</span>
+        </div>
+        <div className="flex justify-between text-sm">
+          <span className="text-gray-600">Enhanced Surplus:</span>
+          <span className="font-semibold text-green-600">+43 parts/day</span>
         </div>
       </div>
     </div>
